@@ -8,6 +8,10 @@
 ![Seaborn](https://img.shields.io/badge/Seaborn-4C8CBF?logo=seaborn&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/SQL-336791?logo=postgresql&logoColor=white)
+![NLP](https://img.shields.io/badge/NLP-FF6F00?logo=spaCy&logoColor=white)
+![Sentiment Analysis](https://img.shields.io/badge/Sentiment%20Analysis-336791?logo=scikit-learn&logoColor=white)
+![Forecasting](https://img.shields.io/badge/Forecasting-4CAF50?logo=statsmodels&logoColor=white)
+![Clustering](https://img.shields.io/badge/Clustering-1E88E5?logo=scikit-learn&logoColor=white)
 
 
 ## Repository Structure
