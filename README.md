@@ -1,4 +1,4 @@
-# Cloud Data Engineering & Advanced Analytics Portfolio
+# Data Analytics Portfolio
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python)](https://www.python.org/)
 [![Jupyter](https://img.shields.io/badge/Jupyter-F37626?logo=jupyter)](https://jupyter.org)
