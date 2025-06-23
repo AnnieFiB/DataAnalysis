@@ -2,39 +2,32 @@
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python)](https://www.python.org/)
 [![Jupyter](https://img.shields.io/badge/Jupyter-F37626?logo=jupyter)](https://jupyter.org)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?logo=scikit-learn&logoColor=white)
+![Plotly](https://img.shields.io/badge/Plotly-3F4F75?logo=plotly&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?logo=matplotlib&logoColor=white)
+![Seaborn](https://img.shields.io/badge/Seaborn-4C8CBF?logo=seaborn&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/SQL-336791?logo=postgresql&logoColor=white)
+
 
 ## Repository Structure
 
 ```
 /
 ├── DataAnalysis/
-│   ├── notebooks/      # Jupyter notebooks (see subfolder structure below)
-│   ├── scripts/        # Python analysis scripts
-│   ├── models/         # Serialized ML models
-│   └── datasets/       # Sample data (CSV/Parquet/Feather)
-├── DataEngineering/
-│   ├── airflow_dags/   # Orchestration workflows
-│   ├── spark_jobs/     # PySpark/Scala processing
-│   └── pipelines/      # ETL pipeline configurations # Key Learning Project (end-to-end implementation)
-|   └── Data Models/    # Database Designs and Datawarehouse Modelling
-├── KLP/                
-│   ├── documentation/  # Technical specs & diagrams
-│   ├── datasets/           
-│   └── scripts/          
-├── .gitignore
-├── README.md
-├── cleanup.bat
-└── requirements.txt
-```
+│   ├── notebooks/              # Jupyter notebooks
+│   │   ├── archives/           # Archived notebooks
+│   │   ├── model/              # Trained models or model notebooks
+│   │   ├── datasets/           # Raw or processed data used in notebooks
+│   │   ├── report_html/        # Data profiling or HTML reports
+│   │   └── exploratoryEDA/     # Exploratory data analysis notebooks
+│   ├── scripts/                # Python analysis scripts
+│   ├── assets/                 # Images, charts, or supporting files
+│   ├── .gitignore
+│   ├── cleanup.bat
+│   ├── requirements.txt
+│   └── README.md
 
-## Notebook Organization (Recommended)
-
-```bash
-DataAnalysis/notebooks/
-├── exploratory/       # Initial data exploration
-├── reports/           # Final analysis notebooks
-├── experimental/      # Hypothesis testing
-└── archive/           # Old/inactive notebooks
 ```
 
 ## Key Components
@@ -44,6 +37,7 @@ DataAnalysis/notebooks/
 | Feature                | Description |
 |------------------------|-------------|
 | **Machine Learning**   | Scikit-learn pipelines & model evaluation |
+| **Machine Learning Lifecycle**  | Model training, evaluation, and deployment |
 | **Visualization**      | Plotly/Matplotlib/Seaborn dashboards |
 | **EDA**               | Automated Pandas Profiling reports |
 | **SQL Integration**    | Querying structured data |
@@ -56,29 +50,6 @@ from pandasql import sqldf
 df = pd.read_csv("data.csv")
 sqldf("SELECT * FROM df WHERE age > 30")
 ```
-
-### 2. Data Engineering
-
- Feature                        | Description |
-|------------------------------|------------------------------|
-| **Data Models**             | Databse desing and modelling , Datawarehousing modelling |
-| **Airflow**                  | DAGs for workflow orchestration |
-| **Spark**                    | Distributed processing jobs |
-| **Data Quality**             | Great Expectations validations |
-| **Cloud Data Pipeline**         | AWS implementation |
-| **Machine Learning Lifecycle**  | Model training, evaluation, and deployment |
-| **CI/CD Deployment**            | Automated integration and deployment |
-
-### 3. KIP Project
-#### Key Features:
-
-| Feature                        | Description |
-|---------------------------------|-------------|
-| **Product/Store Data Collection** | Using **Places API**, **Map API**, **Yelp Dataset**, and **Web Scraping** to integrate store/product-related data |
-| **Market Competitive Analysis** | NLP-based sentiment analysis and competitor benchmarking |
-| **Product Analysis**            | Time-series forecasting and clustering algorithms for trend insights |
-
-
 ## Installation
 
 ```bash
@@ -118,11 +89,6 @@ Typical notebook structure:
 # 1. Explore data
 jupyter lab DataAnalysis/notebooks/exploratory/data_profiling.ipynb
 
-# 2. Process data
-python DataEngineering/pipelines/data_cleaning.py
-
-# 3. Run KiP project
-cd KIP && make run
 ```
 
 ## Maintenance
@@ -133,4 +99,4 @@ cleanup.bat
 cleanup.sh
 
 ```
-https://github.com/EswarDivi/OpeninColab-Kaggle
+
