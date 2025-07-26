@@ -1,0 +1,76 @@
+WeatherAPP - userinput
+
+https://github.com/AnnieFiB/my_projects
+https://mybinder.org/v2/gh/AnnieFiB/my_projects/main?force-rebuild=true
+
+***************KIP****************
+options: Permanently Closed (deprecated)	permanently_closed should be null
+ratings must be 4.0 or above
+
+"Category": search_type,
+Location": location,
+Name	name
+Business Status	business_status
+Formatted Address	formatted_address
+Place ID	place_id
+Phone Number	formatted_phone_number
+International Phone Number	international_phone_number
+Opening Hours	opening_hours
+Website	 website
+Delivery	delivery
+Curbside Pickup	curbside_pickup
+Price Level	price_level
+Rating	rating
+Reviews	reviews
+User Ratings Total	user_ratings_total
+
+
+
+search queries = Mexico city
+spa
+beauty_salon
+pharmacy
+department store
+store
+boutique Butik
+beauty_store
+
+
+Version 134.0.6998.166 
+
+
+oxylab
+annietb
+5qn_nfcsErv=BM2A
+
+curl ''https://realtime.oxylabs.io/v1/queries'' --user 'annietb_rec43:5qn_nfcsErv=BM2A' -H 'Content-Type: application/json' -d '{"source": "universal", "url": "https://sandbox.oxylabs.io/"}' 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

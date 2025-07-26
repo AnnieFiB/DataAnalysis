@@ -13,23 +13,23 @@ for %%d in (__pycache__ .ipynb_checkpoints .pytest_cache *.egg-info .mypy_cache 
 )
 
 echo [2/6] Removing Python cache files (.pyc, .pyo, .pyd)...
-for %%f in (*.pyc *.pyo *.pyd) do (
-    del /s /q "%%f" 2>nul && echo   ✔ Removed: %%f
+for /r %%f in (*.pyc *.pyo *.pyd) do (
+    del /q "%%f" 2>nul && echo   ✔ Removed: %%f
 )
 
 echo [3/6] Removing temporary and backup files (.tmp, *~, .bak)...
-for %%f in (*.tmp *~ *.bak) do (
-    del /s /q "%%f" 2>nul && echo   ✔ Removed: %%f
+for /r %%f in (*.tmp *~ *.bak) do (
+    del /q "%%f" 2>nul && echo   ✔ Removed: %%f
 )
 
-echo [4/6] Removing data outputs and logs (.tsv, .log, .xlsx)...
-for %%f in (*.tsv *.log *.json *.xlsx) do (
-    del /s /q "%%f" 2>nul && echo   ✔ Removed: %%f
+echo [4/6] Removing data outputs and logs (.tsv, .log, .json, .xlsx)...
+for /r %%f in (*.tsv *.log *.json *.xlsx) do (
+    del /q "%%f" 2>nul && echo   ✔ Removed: %%f
 )
 
 echo [5/6] Removing ML model files (.pkl, .npy, .npz, .joblib, .h5, .ckpt)...
-for %%f in (*.pkl *.npy *.npz *.joblib *.h5 *.ckpt) do (
-    del /s /q "%%f" 2>nul && echo   ✔ Removed: %%f
+for /r %%f in (*.pkl *.npy *.npz *.joblib *.h5 *.ckpt) do (
+    del /q "%%f" 2>nul && echo   ✔ Removed: %%f
 )
 
 echo [6/6] Clearing pip cache...
@@ -46,3 +46,4 @@ echo ✅ Cleanup complete! CSV files have been preserved.
 
 endlocal
 pause
+echo Press any key to exit...
