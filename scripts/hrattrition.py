@@ -4,7 +4,8 @@ import numpy as np
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
-import autoviz as sv
+import sweetviz as sv
+
 from datetime import datetime
 
 from sklearn.model_selection import train_test_split
